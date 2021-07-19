@@ -27,12 +27,11 @@ class Body extends React.Component {
   render() {
       return (
          <div className= "content">
-           
-    <ol>
-      {this.props.list.map((value, index) => {
-        return <li key={index}>{value}</li>
-      })}
-    </ol>
+            <ol>
+               {this.props.list.map((value, index) => {
+               return <li key={index}>{value}</li>
+               })}
+            </ol>
          </div>
       );
    }
